@@ -25,7 +25,7 @@ public class BusinessUnit {
 	     */
 	    public static void init() {
 	        config = new ConfigLoader();
-	        testdatafile = System.getProperty("user.dir") + "\\src\\main\\resources\\" + config.locale + "\\" + config.testdatafile;
+	        testdatafile = System.getProperty("user.dir") + "/src/main/resources/" + config.locale + "/" + config.testdatafile;
 	        xmlparser = new XmlParser(config.cluster);
 	        budata = (HashMap<String, Object>) xmlparser.parseXML(testdatafile.toString(), "BusinessUnit_DATA");
 	        busMap = getBusinessUnits(budata);
