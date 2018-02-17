@@ -7,6 +7,8 @@ import java.util.concurrent.ConcurrentHashMap;
 import org.ini4j.InvalidFileFormatException;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.NoAlertPresentException;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -18,18 +20,18 @@ import com.nice.incontact.util.SeleniumLogger;
 
 public abstract class Driver {
 	private static final SeleniumLogger log = new SeleniumLogger(Driver.class);
-	private static RemoteWebDriver driver = null;
+	private static WebDriver driver = null;
 	protected HashMap<String, String> parameters = new HashMap<String, String>();
 	private String rootXPath = "";
 	protected static ConfigLoader config = null;
 	static HashMap<String,String> locatorMap=null;
 	static HashMap<String, HashMap<String, String>> pageClasslocatorMap=null;
 	//Create Map to store current driver session.
-	private static ConcurrentHashMap<Long, RemoteWebDriver> driverMap = new ConcurrentHashMap<Long, RemoteWebDriver>();
+	private static ConcurrentHashMap<Long, WebDriver> driverMap = new ConcurrentHashMap<Long, WebDriver>();
 	public Driver() {
 
 	}
-	
+
 	public Driver(String... params) {
 		for (String parameter : params) {
 			String name = parameter.substring(0, parameter.indexOf("="));
@@ -50,7 +52,7 @@ public abstract class Driver {
 			config = new ConfigLoader();
 		}
 	}
-	
+
 	/**
 	 * Prepares the server URL and posts to the browser
 	 * 
@@ -60,43 +62,43 @@ public abstract class Driver {
 	 * @param uri
 	 * @return
 	 */
-    protected void launchApplication(String protocol, String host, String port, String uri) {
-        if (driver != null) {
-            
-            log.info("launchApplication", "Launching " + config.browser + " with url.........." + protocol + "://" + host + "/" + uri);
-            driver.manage().deleteAllCookies();
-            driver.get(protocol + "://" + host + ":" + port + "/" + uri);
+	protected void launchApplication(String protocol, String host, String port, String uri) {
+		if (driver != null) {
 
-            // Following piece of code is for handling any Alert Message Box
-            // that may appear before Login
-            try {
-                WebDriverWait wait = new WebDriverWait(driver, 2);
+			log.info("launchApplication", "Launching " + config.browser + " with url.........." + protocol + "://" + host + "/" + uri);
+	//		driver.manage().deleteAllCookies();
+			driver.get("https://home-sc10.ucnlabext.com");
 
-               // Alert alt = driver.switchTo().alert();
-               // log.info("openApplication", "Alert Message Box is detected: " + alt.getText());
-               // alt.dismiss();
-            } catch (NoAlertPresentException noe) {
-                // No alert found on page, proceed with test.
-                log.info("launchApplication", "Alert Message Box is NOT present");
+			// Following piece of code is for handling any Alert Message Box
+			// that may appear before Login
+			try {
+				WebDriverWait wait = new WebDriverWait(driver, 2);
 
-            }
-            driver.manage().window().maximize();
-        } else {
-            log.error("launchApplication", "Driver not initialized. Look for earlier warning / errors in the log.");
-        }
+				// Alert alt = driver.switchTo().alert();
+				// log.info("openApplication", "Alert Message Box is detected: " + alt.getText());
+				// alt.dismiss();
+			} catch (NoAlertPresentException noe) {
+				// No alert found on page, proceed with test.
+				log.info("launchApplication", "Alert Message Box is NOT present");
+
+			}
+			driver.manage().window().maximize();
+		} else {
+			log.error("launchApplication", "Driver not initialized. Look for earlier warning / errors in the log.");
+		}
 	}
-	
-	
+
+
 	/**
 	 * Returns the instance of Remote web driver
 	 * 
 	 * @return driver
 	 */
-	public static RemoteWebDriver getRemoteWebDriverInstance() {
-		driver = driverMap.get(Thread.currentThread().getId());
+	public static WebDriver getRemoteWebDriverInstance() {
+	//	driver = driverMap.get(Thread.currentThread().getId());
 		return driver;
 	}
-	
+
 	/**
 	 * Returns true of key with name is defined else returns false
 	 * 
@@ -122,7 +124,7 @@ public abstract class Driver {
 
 		return null;
 	}
-	
+
 	/**
 	 * Returns rootXPath
 	 * 
@@ -131,7 +133,7 @@ public abstract class Driver {
 	public String getXPathLocator() {
 		return rootXPath;
 	}
-	
+
 
 	/**
 	 * Initializes driver object with the capabilities set
@@ -140,9 +142,10 @@ public abstract class Driver {
 	 * @param capabilities
 	 * @return driver
 	 */
-	public static RemoteWebDriver initializeDriver(URL hubUrl, DesiredCapabilities capabilities) {
-		 System.out.println("RemoteWebDriver");
-		driver =  new RemoteWebDriver(hubUrl, capabilities);
+	public static WebDriver initializeDriver(URL hubUrl, DesiredCapabilities capabilities) {
+		System.out.println("RemoteWebDriver");
+		//	driver =  new RemoteWebDriver(hubUrl, DesiredCapabilities.htmlUnit());
+		driver= new ChromeDriver();
 		System.out.println(driver);
 		//Put the current browser instance in map
 		driverMap.put(Thread.currentThread().getId(), driver);
@@ -208,18 +211,19 @@ public abstract class Driver {
 	 * @return Page URL of the current page
 	 */
 	public static String getPageURL() {
-        if (driver != null) {
-            // Do special code for getting current URL on IE browser....
-            if (driver.getCapabilities().getBrowserName().trim().equals("internet explorer")) {
-                return (String) driver.executeScript("return document.location.href");
-            } else {
-                return driver.getCurrentUrl();
-            }
+		if (driver != null) {
+			// Do special code for getting current URL on IE browser....
+
+			return driver.getCurrentUrl();
+
 		} else {
 			log.warn("getPageURL", "Driver not initialized. Cannot determine current page URL");
 		}
 		return null;
 	}
-
-
+	
+	public static void setWebDriver(WebDriver webdriver){
+		driver = webdriver;
+	}
+	
 }

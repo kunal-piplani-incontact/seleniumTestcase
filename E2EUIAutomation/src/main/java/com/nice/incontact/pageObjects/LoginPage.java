@@ -4,6 +4,10 @@ import java.util.HashMap;
 
 import com.nice.incontact.util.SeleniumLogger;
 import com.nice.incontact.components.WebElements;
+
+import org.apache.commons.collections.bag.SynchronizedSortedBag;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class LoginPage extends WebElements {
@@ -23,16 +27,18 @@ public class LoginPage extends WebElements {
 		return bIsOpen;
 	}
 
-	public void doLogin(String userName, String password) {
+	public void doLogin(WebDriver driver, String userName, String password) {
 		try {
 			log.info("doLogin", "Logging into Central with user: " + userName);
-			WebElement username = getElementByXpath(getXPathLocator() + locators.get("username"));
+			log.info("doLogin", locators.get("username"));
+			log.info("doLogin", driver.findElement(By.xpath(locators.get("username"))).toString());
+			WebElement username = driver.findElement(By.xpath(locators.get("username")));
 			username.sendKeys(userName);
 
-			WebElement password1 = getElementByXpath(getXPathLocator() + locators.get("password"));
+			WebElement password1 = driver.findElement(By.xpath(locators.get("password")));
 			password1.sendKeys(password);
 
-			WebElement button = getElementByXpath(getXPathLocator() + locators.get("loginButton"));
+			WebElement button = driver.findElement(By.xpath(locators.get("loginButton")));
 			button.click();
 		} catch (Exception e) {
 			e.printStackTrace();

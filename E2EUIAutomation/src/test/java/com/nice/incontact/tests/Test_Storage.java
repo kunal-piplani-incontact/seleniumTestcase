@@ -23,7 +23,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 
-public class Test_Storage extends TestClient {
+public class Test_Storage extends TestClient{
 	
 	private static final SeleniumLogger log = new SeleniumLogger(Test_Storage.class);
 	private HashMap<String, String> customData = new HashMap<String, String>();
@@ -54,11 +54,11 @@ public class Test_Storage extends TestClient {
         password = Users.userpassword;
         loggedInUser = Users.username + " " + Users.userlastname;
         
-        responseTimer.start("Login to Central");
+      //  responseTimer.start("Login to Central");
         
         CommonFunctions comm= createCommonFunctions();
 		comm.login(user,password,"");
-		responseTimer.stop();
+	//	responseTimer.stop();
 		
 		CustomDataLoader.init();
         customData = CustomDataLoader.getdataMap("Test_Storage/inputs");
@@ -73,7 +73,7 @@ public class Test_Storage extends TestClient {
 	@Test(description = "This test case launches Max, makes an outbound call, receives the call on Xlite and then hangs up the call.")
 	@TCID(value = "IC-74349")
 	public void test_launchMaxandMakeOutboundCall(){
-		String centralUrl=config.protocol+"://"+config.host+"/"+config.centraluri+"/Default.aspx" ;
+		/*String centralUrl=config.protocol+"://"+config.host+"/"+config.centraluri+"/Default.aspx" ;
 		System.out.println("the url is " + centralUrl);
 		Assert.assertTrue(centralHomePage.isCentralHomePagePresent(centralUrl));
 		
@@ -100,6 +100,6 @@ public class Test_Storage extends TestClient {
 			isPresent = true;
 		}
 		//Assert.assertTrue(isPresent);
-		centralHomePage.quitDriver();
+*/		centralHomePage.quitDriver();
 	}
 }

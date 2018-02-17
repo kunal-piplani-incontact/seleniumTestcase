@@ -16,6 +16,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.Point;
 import org.openqa.selenium.StaleElementReferenceException;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.internal.Locatable;
@@ -89,7 +90,7 @@ public class WebElements extends Driver{
 	 */
 	public static boolean isElementPresent(String xpath) {
 		try {
-			RemoteWebDriver driver = getRemoteWebDriverInstance();
+			WebDriver driver = getRemoteWebDriverInstance();
 			// nullify implicitlyWait
 			driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
 			List<WebElement> elements = driver.findElements(By.xpath(xpath));
@@ -114,7 +115,7 @@ public class WebElements extends Driver{
 	 */
 	public static boolean isElementPresent(String xpath, int timeout) {
 		try {
-			RemoteWebDriver driver = getRemoteWebDriverInstance();
+			WebDriver driver = getRemoteWebDriverInstance();
 			// nullify implicitlyWait
 			driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
 			WebDriverWait wait = new WebDriverWait(driver, timeout);
@@ -137,7 +138,7 @@ public class WebElements extends Driver{
 	 * @return true if elements are present false otherwise
 	 */
 	public static boolean isListOfElementsPresent(String xpath) {
-		RemoteWebDriver driver = getRemoteWebDriverInstance();
+		WebDriver driver = getRemoteWebDriverInstance();
 		// nullify implicitlyWait
 		driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
 		List<WebElement> list = driver.findElements(By.xpath(xpath));
@@ -159,7 +160,7 @@ public class WebElements extends Driver{
 	 */
 	public static boolean isListOfElementsPresent(String xpath, int timeout) {
 		try {
-			RemoteWebDriver driver = getRemoteWebDriverInstance();
+			WebDriver driver = getRemoteWebDriverInstance();
 			// nullify implicitlyWait
 			driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
 			WebDriverWait wait = new WebDriverWait(driver, timeout);
@@ -280,7 +281,7 @@ public class WebElements extends Driver{
 	 * @return Object
 	 */
 	public Object executeJavascript(String script) {
-		JavascriptExecutor js = getRemoteWebDriverInstance();
+		JavascriptExecutor js = (JavascriptExecutor)getRemoteWebDriverInstance();
 		Object output = js.executeScript(script, getElementByXpath(getXPathLocator()));
 		return output;
 
@@ -296,7 +297,7 @@ public class WebElements extends Driver{
 	 * @return Object
 	 */
 	public Object executeJavascript(String script, Object... args) {
-		JavascriptExecutor js = getRemoteWebDriverInstance();
+		JavascriptExecutor js = (JavascriptExecutor)getRemoteWebDriverInstance();
 		Object output = js.executeScript(script, getElementByXpath(getXPathLocator()), args);
 		return output;
 	}
@@ -590,7 +591,7 @@ public class WebElements extends Driver{
 	}
 
 	public void quitDriver(){
-		RemoteWebDriver driver = getRemoteWebDriverInstance();
+		WebDriver driver = getRemoteWebDriverInstance();
 		try {
 			if(driver!=null){
 				driver.quit();

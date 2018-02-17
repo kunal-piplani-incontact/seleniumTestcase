@@ -10,6 +10,7 @@ import java.util.Date;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.ITestResult;
 import org.testng.Reporter;
@@ -67,7 +68,7 @@ public class Screenshot extends TestListenerAdapter {
 	     */
 	    private static void addScreenshot() {
 	        // Get driver instance.
-	        RemoteWebDriver driver = Driver.getRemoteWebDriverInstance();
+	        WebDriver driver = Driver.getRemoteWebDriverInstance();
 	        /* Screenshot captured */
 	        File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 
