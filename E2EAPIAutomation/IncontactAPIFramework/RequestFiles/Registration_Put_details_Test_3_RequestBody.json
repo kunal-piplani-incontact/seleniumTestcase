@@ -1,0 +1,13 @@
+{
+"NAMESPACE": "Aircel012",
+"DATASET": "Billing" ,
+"S3_LINK_DESTINATION_DB_CONNECTION_DETAILS" : "https://s3-us-west-2.amazonaws.com/egress-details/mssql.json",
+"INCREMENTAL_FLAG": "True",
+"COLUMN_FOR_INCREMENTAL_PUSH" : "Date",
+"EGRESS_SCHEDULE": "Daily",
+"CONTACT_DETAILS": "anupam.pawale@telenor.com",
+"COMMAND_ARGUMENTS": "export - all",
+"USER":"tom hanks",
+"COMMENTS":"Egress Registration",
+"EXPIRY_DATE":"2017-09-28T00:00:00UTC"
+}

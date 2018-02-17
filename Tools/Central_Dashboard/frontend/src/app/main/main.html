@@ -1,0 +1,93 @@
+<div class="container">
+  
+
+      <div class="panel panel-default">
+      <div class="panel-heading">Pie chart</div>
+      <div class="panel-body">
+        <div class="col-md-4">
+          <canvas id="pie" class="chart chart-pie chart-xs ng-isolate-scope" chart-data="main.getData()" chart-labels="main.getLabels()" chart-options="main.getOptions()"></canvas>
+        </div>
+        <div class="col-md-8">
+          <table class="table table-bordered">
+            <thead>
+              <th>Project Name</th>
+              <th>Testing type</th>
+              <th>Total TC</th>
+              <th>Pass</th>
+              <th>Fail</th>
+              <th>Skipped</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>{{main.selectedRow[0]}}</td>
+                <td>{{main.selectedRow[1]}}</td>
+                <td>{{main.selectedRow[2]}}</td>
+                <td>{{main.selectedRow[3]}}</td>
+                <td>{{main.selectedRow[4]}}</td>
+                <td>{{main.selectedRow[5]}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+     </div>
+
+  <!--<div class="col-md-8"> -->
+    <div class="panel panel-default">
+    <div class="panel-heading"><h4>Quality Dashboard</h4></div>
+    <div class="panel-body">
+    <div class="input-group">
+      <input class="form-control custom-control" style="resize: none;" type="text" id="searchInput" onkeyup="myFunction()" placeholder="Search for Project.." title="Type in a name">
+      <span class="input-group-addon btn btn-primary" ng-click="main.getMessage()">Refresh</span>
+    </div>      
+      <table id="mainTable" class="table table-bordered table-hover">
+        <thead>
+          <th class="info">Project Name</th>
+          <th class="info">Owner</th>
+          <th class="info">Testing Type</th>
+          <th class="info">Execution Date</th>
+          <th class="info">Total TC</th>
+          <th class="info">Pass</th>
+          <th class="info">Fail</th>
+          <th class="info">Skipped</th>
+          <th class="info">Time Taken</th>
+        </thead>
+        <tbody>
+          <tr ng-repeat="message in main.details" ng-click="main.getPiechartData(message); main.index($index)">
+            <td class="">{{message.Name}}</td>
+            <td>{{message.Owner}}</td>
+            <td>{{message.Type}}</td>
+            <td>{{message.Date}}</td>
+            <td>{{message.Total}}</td>
+            <td>{{message.Pass}}</td>
+            <td>{{message.Fail}}</td>
+            <td>{{message.Skip}}</td>
+            <td>{{message.Duration}}</td>
+          </tr>
+        </tbody>
+      </table>      
+      </div>
+    </div>
+<!--  </div> -->
+</div>
+
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("searchInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("mainTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+

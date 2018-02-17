@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testdata>
+    <CL_SC10>
+    <COMMON_DATA>
+        <BusinessUnit_DATA>
+         <BusinessUnit_SC10>
+            <BUName>sspuqa</BUName>
+            <UserAdministrator>
+              <Name>bhagyashree@sc10.com</Name>
+              <Password>Password1</Password>
+              <FirstName/>
+              <LastName/>
+            </UserAdministrator>
+            <UserSupervisor>
+              <Name/>
+              <Password/>
+              <FirstName/>
+              <LastName/>
+            </UserSupervisor>
+            <UserAgent>
+              <Name/>
+              <Password/>
+              <FirstName/>
+              <LastName/>
+            </UserAgent>
+          </BusinessUnit_SC10>
+          </BusinessUnit_DATA>
+        <TestData_CustomData>
+          <Test_Storage>
+            <inputs>
+              <windowName>MAX</windowName>
+              <maxPhoneNumber>4008031135</maxPhoneNumber>
+              <callingNumber>4008031135</callingNumber>
+            </inputs>
+          </Test_Storage>
+        </TestData_CustomData>
+        </COMMON_DATA>
+    </CL_SC10>
+</testdata>

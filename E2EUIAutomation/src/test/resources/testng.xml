@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Tests" verbose="5" junit="false" parallel="false" configfailurepolicy="continue" thread-count="5" skipfailedinvocationcounts="false" data-provider-thread-count="10" group-by-instances="false" preserve-order="true" allow-return-values="false">
+  <listeners>
+    <listener class-name="com.nice.incontact.util.TestAppender" />
+  </listeners>
+  <test name="Test1" junit="false" skipfailedinvocationcounts="false" preserve-order="true" group-by-instances="false" allow-return-values="false">
+    <classes>
+		<class name="com.nice.incontact.tests.Test_Storage"/>
+    </classes>
+  </test>  
+</suite>

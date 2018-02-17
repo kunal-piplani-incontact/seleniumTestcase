@@ -1,0 +1,42 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.4.3.RELEASE")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'org.springframework.boot'
+
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+jar {
+    baseName = 'qualitydboard'
+    version =  '0.1.0'
+}
+
+dependencies {
+
+ 	compile('org.springframework.boot:spring-boot-starter')
+    compile("org.springframework.boot:spring-boot-starter-web")
+    compile("org.springframework.data:spring-data-jpa")
+	compile group: 'org.hibernate', name: 'hibernate-core', version: '5.2.10.Final'
+	compile group: 'com.h2database', name: 'h2', version: '1.4.196'
+	compile group: 'springframework', name: 'spring-orm', version: '1.2.6'
+	compile group: 'org.xerial', name: 'sqlite-jdbc', version: '3.19.3'
+ compile ('commons-dbcp:commons-dbcp')
+     compile('org.slf4j:jcl-over-slf4j:1.7.12')
+     compile group: 'ch.qos.logback', name: 'logback-classic', version: '1.1.7'
+    compile group: 'ch.qos.logback', name: 'logback-core', version: '1.1.7'
+
+}
+

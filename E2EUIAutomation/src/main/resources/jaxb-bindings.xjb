@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  This enables the simple binding mode in JAXB.
+-->
+<jaxb:bindings
+  xmlns:jaxb="http://java.sun.com/xml/ns/jaxb" version="2.1">
+  
+  <jaxb:globalBindings generateElementProperty="false" generateValueClass="true">
+  </jaxb:globalBindings>
+</jaxb:bindings>

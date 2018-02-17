@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    url: jdbc:sqlite:C:/sqlite/SQLiteStudio/qualityDashBoard.db
+    username: 
+    password: 
+    driver-class-name: org.sqlite.JDBC
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: com.qdboard.config.SQLiteDialect
+    show-sql: true

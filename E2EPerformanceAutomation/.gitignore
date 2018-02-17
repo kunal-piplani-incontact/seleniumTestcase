@@ -1,0 +1,13 @@
+/.idea/
+/project/project/
+/project/target/
+/target/
+/backups/
+!backups/backup.gitkeep
+/tests/
+!tests/test.gitkeep
+/config/
+!config/config.gitkeep
+/testData/
+!testData/data.json
+/metrics/

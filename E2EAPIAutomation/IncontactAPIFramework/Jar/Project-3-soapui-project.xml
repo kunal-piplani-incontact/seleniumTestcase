@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="3254a579-e893-459a-9f46-f409662c6624" activeEnvironment="Default environment" name="Project 3" resourceRoot="" soapui-version="6.0.0" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="a57dae25-3281-4f4d-8bce-3eaa8c2961c7" wadlVersion="http://wadl.dev.java.net/2009/02" name="REST Service 1" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints/><con:resource name="/" path="/" id="af4d2992-81ae-4bdf-9792-ae58ad4f20e2"><con:settings/><con:parameters/><con:method name="GET" id="dee59e2a-648d-4883-828c-21336fe95c1f" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>text/html; charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element>Response</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>text/html; charset=ISO-8859-1</con:mediaType><con:status>200</con:status><con:params/><con:element>html</con:element></con:representation><con:request name="GET Request" id="936fe47b-cc2f-4061-b65e-161af8466c5d" mediaType="application/json"><con:settings/><con:endpoint>http://www.google.com</con:endpoint><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="0bea3910-0d07-46f8-98cc-9b48c83acbbc" wadlVersion="http://wadl.dev.java.net/2009/02" name="REST Service 2" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints/><con:resource name="/posts" path="/posts" id="b45c153e-48cd-4e76-b27a-58536c2a2fd3"><con:settings/><con:parameters/><con:method name="GET" id="b99ef509-93a1-4603-a873-eb3d39d77871" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element>Response</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>text/html</con:mediaType><con:status>200</con:status><con:params/><con:element>html</con:element></con:representation><con:request name="GET Request" id="6aa77b00-cd15-4a24-8a9f-a4abbbe74402" mediaType="application/json"><con:settings/><con:endpoint>https://jsonplaceholder.typicode.com</con:endpoint><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="4dc03e2a-2932-44f3-83ec-cc2cecd0d406" wadlVersion="http://wadl.dev.java.net/2009/02" name="REST Service 3" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints/><con:resource name="/" path="/" id="90703b85-48fe-4bf9-89d1-a26bfa730ebf"><con:settings/><con:parameters/><con:method name="GET" id="744b53db-971d-40aa-805e-47868896d067" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element>Response</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>text/html; charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element>html</con:element></con:representation><con:request name="GET Request" id="383178fd-827b-4f2d-99f0-0b330c9a74d2" mediaType="application/json"><con:settings/><con:endpoint>https://www.google.com</con:endpoint><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="09135648-cd5a-47e6-8b7f-f741959c2716" wadlVersion="http://wadl.dev.java.net/2009/02" name="REST Service 4" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints/><con:resource name="/" path="/" id="97ca1e59-b811-4b55-834c-0f8bfb44c37f"><con:settings/><con:parameters/><con:method name="POST" id="f887206d-8d00-4ff5-9ba1-201e2983a740" method="POST"><con:settings/><con:parameters/><con:request name="POST Request" id="9f96247a-e7c6-4d50-a862-3ac534c750f6" mediaType="application/json"><con:settings/><con:endpoint>http://www.google.com</con:endpoint><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="a89acaa6-a653-472d-b6f2-aee4eb352e54" wadlVersion="http://wadl.dev.java.net/2009/02" name="REST Service 5" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints/><con:resource name="/" path="/" id="40e28e76-429f-4de8-bb27-fc2e681ecf13"><con:settings/><con:parameters/><con:method name="PUT" id="44d5cd4e-6afb-4eab-ab95-19c24661d26f" method="PUT"><con:settings/><con:parameters/><con:request name="PUT Request" id="7fe42b17-f37b-4a5c-8d71-8f06865d0f4b" mediaType="application/json"><con:settings/><con:endpoint>http://www.google.com</con:endpoint><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="dcb0fd67-ba5e-4b26-91c5-cd65b3741c5e" wadlVersion="http://wadl.dev.java.net/2009/02" name="REST Service 6" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints/><con:resource name="/" path="/" id="db45e14c-5fbc-46ae-bbbf-ed830d6049b8"><con:settings/><con:parameters/><con:method name="GET" id="2ef5b280-845f-41eb-980a-db75ace912c1" method="GET"><con:settings/><con:parameters/><con:request name="GET Request" id="7cad20dd-bf04-44b0-9987-57b7328a43cd" mediaType="application/json"><con:settings/><con:endpoint>http://www.google.com</con:endpoint><con:parameters/></con:request></con:method></con:resource></con:interface><con:testSuite id="7fae18c3-d91c-41e4-823a-1f21fc67602f" name="Request_Suite"><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:runType>SEQUENTIAL</con:runType><con:testCase id="4848647b-3f4e-479a-8483-aecb174b4db0" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="RequestTestStep" searchProperties="true" timeout="0"><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="restrequest" name="REST_GET_Request" id="1ec7381c-cb61-4530-bf03-77d3f16b7afc"><con:settings/><con:config service="REST Service 3" resourcePath="/" methodName="GET" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST_GET_Request" id="383178fd-827b-4f2d-99f0-0b330c9a74d2" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding xsi:nil="true"/><con:endpoint>${host}</con:endpoint><con:request>${request}</con:request><con:originalUri>https://jsonplaceholder.typicode.com/posts/</con:originalUri><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="REST_POST_Request" id="aef076de-2531-4564-924b-7323d1f05c88"><con:settings/><con:config service="REST Service 4" resourcePath="/" methodName="POST" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST_POST_Request" id="9f96247a-e7c6-4d50-a862-3ac534c750f6" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>${host}</con:endpoint><con:request>${requestBody}</con:request><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="REST_PUT_Request" id="91eb7854-2bfe-46a7-aad9-dc3e28bb7c0d"><con:settings/><con:config service="REST Service 5" resourcePath="/" methodName="PUT" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST_PUT_Request" id="7fe42b17-f37b-4a5c-8d71-8f06865d0f4b" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>${host}</con:endpoint><con:request>${requestBody}</con:request><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="REST_DELETE_Request" id="74d61a10-0525-463f-83eb-913b76224532"><con:settings/><con:config service="REST Service 6" resourcePath="/" methodName="GET" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST_DELETE_Request" id="7cad20dd-bf04-44b0-9987-57b7328a43cd" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>${host}</con:endpoint><con:request/><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase><con:properties/><con:reportParameters/></con:testSuite><con:testSuite id="ed591a72-7af9-49f5-a6a2-9992b392cbba" name="DriverSuite"><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:runType>SEQUENTIAL</con:runType><con:testCase id="dd929e6a-752d-4efc-9627-2e67e638a0e6" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="DriverTestStep" searchProperties="true" timeout="0"><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="groovy" name="Driver_Script" id="ac851dfd-efd1-4c72-979b-333f55f89a7a"><con:settings/><con:config><script>import utils.*;
+import java.util.*;
+import groovy.json.JsonSlurper;
+import java.io.*;
+
+def  util = new excelUtils("C:\\Users\\mgupta\\IncontactNew\\QAAPIAutomation\\SoapUi\\TestDriverExcel.xlsx");
+def testCasesDetails= util.getAllParams(util.getActiveTestCases("Driver"), util.getHeaders("APIDToCallDetails"), "APIDToCallDetails")
+
+for(int i=0;i&lt;testCasesDetails.size();i++)
+{
+	Map&lt;String,String> testCase =testCasesDetails.get(i);
+	def requestType = testCase.get('TypeOfRequest');	
+	log.info requestType			 
+	switch (requestType.toUpperCase()) {
+		case 'GET':
+		     runGetTest(testCase);
+			break;
+	     case 'POST':
+               runPostTest(testCase);
+               break; 
+	     case 'DELETE':
+               runDeleteTest(testCase);
+               break;
+	     case 'PUT' :
+               runPutTest(testCase);
+	          break;
+		}
+}
+
+public void runGetTest(def testCase){
+
+	setHost(testCase);
+	def prj = testRunner.testCase.testSuite.project.workspace.getProjectByName("Project 3")
+	def tCase = prj.testSuites['Request_Suite'].testCases['RequestTestStep']
+	def tStep = tCase.getTestStepByName("REST_GET_Request")
+     tStep.run(testRunner, context)
+	def response = context.expand( '${#[Request_Suite#RequestTestStep#REST_GET_Request]#Response}' )
+//     def response = testRunner.testCase.testSteps["REST_GET_Request"].testRequest.response.contentAsString
+	saveResponse(response);
+	log.info "printing response"+response
+}
+
+
+public void runPostTest(def testCase){
+	setHost(testCase);
+	def prj = testRunner.testCase.testSuite.project.workspace.getProjectByName("Project 3")
+	def tCase = prj.testSuites['Request_Suite'].testCases['RequestTestStep']
+	def tStep = tCase.getTestStepByName("REST_POST_Request")
+	tStep.run(testRunner, context)
+	def response = context.expand( '${#[Request_Suite#RequestTestStep#REST_POST_Request]#Response}' )
+	log.info response
+}
+
+public void runDeleteTest(def testCase){
+	setHost(testCase);
+	def prj = testRunner.testCase.testSuite.project.workspace.getProjectByName("Project 3")
+	def tCase = prj.testSuites['Request_Suite'].testCases['RequestTestStep']
+	def tStep = tCase.getTestStepByName("REST_DELETE_Request")
+	tStep.run(testRunner, context)
+	def response = context.expand( '${#[Request_Suite#RequestTestStep#REST_DELETE_Request]#Response}' )
+	log.info response
+}
+
+
+public void runPutTest(def testCase){
+	setHost(testCase);
+	def prj = testRunner.testCase.testSuite.project.workspace.getProjectByName("Project 3")
+	def tCase = prj.testSuites['Request_Suite'].testCases['RequestTestStep']
+	def tStep = tCase.getTestStepByName("REST_PUT_Request")
+	tStep.run(testRunner, context)
+	def response = context.expand( '${#[Request_Suite#RequestTestStep#REST_PUT_Request]#Response}' )
+	log.info response
+}
+
+public void setHost(def testCase)
+{
+	def host=testCase.get('BaseUrl')+testCase.get('URIToAppend');
+	if(testCase.get('Prameters')!='')
+	{
+		host=host+'?'+testCase.get('Prameters')
+	}
+	log.info host
+	context['host']=host;
+}
+
+public void setRequestBody(def testCase)
+{
+	def filePath=testCase.get('RequestXMLorJsonPath');
+	def file = new File(filePath);
+	if(filePath.contains(".json")) 
+	{
+		def slurper = new JsonSlurper().parse(file);
+	}
+	else if(filePath.contains(".xml"))
+	{
+		def slurper = new JsonSlurper();
+	}
+//	log.info host
+	context['requestBody']=requestBody;
+}
+
+public void saveResponse(def response)
+{
+	def File = New PrintWriter ("C:/mgupta/response.xml")
+	File.println(response)
+	File.flush()
+	File.close()
+}
+
+
+</script></con:config></con:testStep><con:testStep type="groovy" name="temp" id="bf62d3c5-2a71-42fc-a770-998cd039fc5e"><con:settings/><con:config><script>	def prj = testRunner.testCase.testSuite.project.workspace.getProjectByName("Project 3")
+	def tCase = prj.testSuites['Request_Suite'].testCases['RequestTestStep']
+	def tStep = tCase.getTestStepByName("REST_GET_Request")
+	log.info tStep.getPropertyValue('Endpoint')
+	log.info tStep.getPropertyValue('Name')
+	log.info tStep.getPropertyValue('Endpoint')</script></con:config></con:testStep><con:properties><con:property><con:name>requestBody</con:name><con:value/></con:property></con:properties><con:reportParameters/></con:testCase><con:properties/><con:reportParameters/></con:testSuite><con:savedRecentRuns>1</con:savedRecentRuns><con:properties/><con:wssContainer/><con:databaseConnectionContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:reporting><con:reportTemplates/><con:xmlTemplates/><con:xmlTemplates/><con:parameters/><con:parameters/></con:reporting><con:reporting/><con:authRepository/><con:tags/></con:soapui-project>

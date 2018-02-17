@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="3254a579-e893-459a-9f46-f409662c6624" activeEnvironment="Default environment" name="InContact_API_Test" resourceRoot="" soapui-version="6.0.0" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="4dc03e2a-2932-44f3-83ec-cc2cecd0d406" wadlVersion="http://wadl.dev.java.net/2009/02" name="REST Service 3" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints/><con:resource name="/" path="/${resource}" id="90703b85-48fe-4bf9-89d1-a26bfa730ebf"><con:settings/><con:parameters/><con:method name="GET" id="744b53db-971d-40aa-805e-47868896d067" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element>Response</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>text/html; charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>text/html; charset=ISO-8859-1</con:mediaType><con:status>200</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>text/html; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:pos="https://jsonplaceholder.typicode.com/posts/">pos:Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/json</con:mediaType><con:status>403</con:status><con:params/><con:element xmlns:pos="https://jsonplaceholder.typicode.com/posts/">pos:Fault</con:element></con:representation><con:request name="GET Request" id="383178fd-827b-4f2d-99f0-0b330c9a74d2" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://www.google.com</con:endpoint><con:request/><con:originalUri>https://www.google.co.in/</con:originalUri><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/><con:parameterOrder/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="09135648-cd5a-47e6-8b7f-f741959c2716" wadlVersion="http://wadl.dev.java.net/2009/02" name="REST Service 4" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints/><con:resource name="/" path="/${resource}" id="97ca1e59-b811-4b55-834c-0f8bfb44c37f"><con:settings/><con:parameters/><con:method name="POST" id="f887206d-8d00-4ff5-9ba1-201e2983a740" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>text/html; charset=utf-8</con:mediaType><con:status>400</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>201</con:status><con:params/><con:element xmlns:user="https://reqres.in/api/users">user:Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/json</con:mediaType><con:status>403</con:status><con:params/><con:element xmlns:user="https://reqres.in/api/users">user:Fault</con:element></con:representation><con:request name="POST Request" id="9f96247a-e7c6-4d50-a862-3ac534c750f6" mediaType="application/json" postQueryString="false"><con:settings/><con:endpoint>http://www.google.com</con:endpoint><con:request/><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/><con:parameterOrder/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="a89acaa6-a653-472d-b6f2-aee4eb352e54" wadlVersion="http://wadl.dev.java.net/2009/02" name="REST Service 5" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints/><con:resource name="/" path="/${resource}" id="40e28e76-429f-4de8-bb27-fc2e681ecf13"><con:settings/><con:parameters/><con:method name="PUT" id="44d5cd4e-6afb-4eab-ab95-19c24661d26f" method="PUT"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>application/json</con:mediaType><con:status>403</con:status><con:params/><con:element xmlns:bil="https://2epm7cn73b.execute-api.us-west-2.amazonaws.com/dev/egressregistration/Aircel007/Billing">bil:Fault</con:element></con:representation><con:request name="PUT Request" id="7fe42b17-f37b-4a5c-8d71-8f06865d0f4b" mediaType="application/json" postQueryString="false"><con:settings/><con:endpoint>http://www.google.com</con:endpoint><con:request/><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="24f8c0cc-4a50-434c-908b-5a8e2bce1623" wadlVersion="http://wadl.dev.java.net/2009/02" name="REST Service 7" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints/><con:resource name="/" path="/${resource}" id="c2fada48-85a5-44a6-a4c1-04449a1f5bd9"><con:settings/><con:parameters/><con:method name="DELETE" id="71560e7e-9af7-4d88-a1c1-68cd1608a3b8" method="DELETE"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>application/json</con:mediaType><con:status>403</con:status><con:params/><con:element xmlns:bil="https://2epm7cn73b.execute-api.us-west-2.amazonaws.com/dev/egressregistration/Aircel007/Billing">bil:Fault</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:request name="DELETE Request" id="87ec10dd-2886-42c8-ac53-9d6e19a83f09" mediaType="application/json" postQueryString="false"><con:settings/><con:endpoint>http://www.google.com</con:endpoint><con:request/><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="4b6c2bf0-603c-4787-9f60-b91cbb03f237" wadlVersion="http://wadl.dev.java.net/2009/02" name="REST Service 9" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints/><con:resource name="/" path="/egressregistration" id="9896ed8c-c1ef-4445-b7b7-6c4d01e9ac81"><con:settings/><con:parameters/><con:method name="POST" id="cb4d40e7-3463-4084-bca7-4264fc3ea4e8" method="POST"><con:settings/><con:parameters><con:parameter><con:name>Authorization</con:name><con:value>${authorization}</con:value><con:style>HEADER</con:style><con:default>${authorization}</con:default><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>X-Amz-Date</con:name><con:value>${AMZ-Date}</con:value><con:style>HEADER</con:style><con:default>${AMZ-Date}</con:default><con:description xsi:nil="true"/></con:parameter></con:parameters><con:representation type="FAULT"><con:mediaType>text/html; charset=UTF-8</con:mediaType><con:status>404</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="FAULT"><con:mediaType>application/json</con:mediaType><con:status>403</con:status><con:params/><con:element xmlns:sbj="https://www.google.com/sbjkdajkdjadsadada">sbj:Fault</con:element></con:representation><con:representation type="FAULT"><con:mediaType>text/html</con:mediaType><con:status>502</con:status><con:params/><con:element>html</con:element></con:representation><con:request name="POST Request" id="1d38e467-47c7-416a-97e8-bb792aeda6a1" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://www.google.com</con:endpoint><con:request/><con:originalUri>https://www.google.com/egressregistration</con:originalUri><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/><con:parameterOrder><con:entry>Authorization</con:entry><con:entry>X-Amz-Date</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="b1ccf970-924c-48c2-ab0e-0627c01bb356" wadlVersion="http://wadl.dev.java.net/2009/02" name="REST Service 10" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints/></con:interface><con:interface xsi:type="con:RestService" id="93f7e812-63f9-4281-a8f8-fa97c24e00ee" wadlVersion="http://wadl.dev.java.net/2009/02" name="dlegress" type="rest" basePath="" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:description>dlegress</con:description><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>https://2epm7cn73b.execute-api.us-west-2.amazonaws.com</con:endpoint></con:endpoints><con:resource name="root" path="/dev" id="5101681d-4201-4ec9-b8ce-b38fe38b3cca"><con:settings/><con:parameters/><con:resource name="egressregistration" path="/egressregistration" id="4f3163be-41db-4fd5-a059-44c033ac6828"><con:settings/><con:parameters/><con:resource name="{NAMESPACE}" path="/acde" id="9b88225b-6c55-457d-b321-07abc731213b"><con:settings/><con:parameters/><con:resource name="{DATASET}" path="/agentstate" id="76e88fd0-c384-4a6f-b782-e080a88a19af"><con:settings/><con:parameters/><con:method name="DELETE" id="b85d567c-0c5e-4a1e-a9a1-6673fa49d8ff" method="DELETE"><con:settings/><con:parameters><con:parameter><con:name>X-Amz-Date</con:name><con:style>HEADER</con:style></con:parameter><con:parameter required="true"><con:name>Authorization</con:name><con:style>HEADER</con:style></con:parameter></con:parameters><con:representation type="RESPONSE"><con:mediaType/><con:status>200</con:status><con:params/></con:representation><con:request name="Request 1" id="64bf379d-c366-43ae-990d-5ff67f45215a" mediaType="application/json" postQueryString="false"><con:settings/><con:endpoint>https://2epm7cn73b.execute-api.us-west-2.amazonaws.com</con:endpoint><con:request/><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/><con:parameterOrder><con:entry>X-Amz-Date</con:entry><con:entry>Authorization</con:entry></con:parameterOrder></con:request></con:method><con:method name="POST" id="572fb175-f68d-4688-9f52-753db70d7129" method="POST"><con:settings/><con:parameters><con:parameter><con:name>X-Amz-Date</con:name><con:style>HEADER</con:style></con:parameter><con:parameter required="true"><con:name>Authorization</con:name><con:style>HEADER</con:style></con:parameter></con:parameters><con:representation type="RESPONSE"><con:mediaType/><con:status>200</con:status><con:params/></con:representation><con:request name="Request 1" id="4996e403-7744-4fdb-8043-8ebb280b3c5e" mediaType="application/json" postQueryString="false"><con:settings/><con:endpoint>https://2epm7cn73b.execute-api.us-west-2.amazonaws.com</con:endpoint><con:request/><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/><con:parameterOrder><con:entry>X-Amz-Date</con:entry><con:entry>Authorization</con:entry></con:parameterOrder></con:request></con:method><con:method name="GET" id="9e3ce3dc-9644-43fc-80c4-ab6f39dcb6c3" method="GET"><con:settings/><con:parameters><con:parameter><con:name>X-Amz-Date</con:name><con:style>HEADER</con:style></con:parameter><con:parameter required="true"><con:name>Authorization</con:name><con:style>HEADER</con:style></con:parameter></con:parameters><con:representation type="RESPONSE"><con:mediaType/><con:status>200</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:agen="https://2epm7cn73b.execute-api.us-west-2.amazonaws.com/dev/egressregistration/acde/agentstate">agen:Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/json</con:mediaType><con:status>403 404</con:status><con:params/><con:element xmlns:agen="https://2epm7cn73b.execute-api.us-west-2.amazonaws.com/dev/egressregistration/acde/agentstate">agen:Fault</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="b0c75b9c-e9d5-4419-ae0e-a8001c11e8da" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://2epm7cn73b.execute-api.us-west-2.amazonaws.com</con:endpoint><con:request/><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters>
+  <con:entry key="Authorization" value="${authorization}"/>
+  <con:entry key="X-Amz-Date" value="${AMZ-Date}"/>
+</con:parameters><con:parameterOrder><con:entry>X-Amz-Date</con:entry><con:entry>Authorization</con:entry></con:parameterOrder></con:request></con:method><con:method name="PUT" id="931bf5cf-57bb-4053-9db7-3b0d0e08c596" method="PUT"><con:settings/><con:parameters><con:parameter><con:name>X-Amz-Date</con:name><con:style>HEADER</con:style></con:parameter><con:parameter required="true"><con:name>Authorization</con:name><con:style>HEADER</con:style></con:parameter></con:parameters><con:representation type="RESPONSE"><con:mediaType/><con:status>200</con:status><con:params/></con:representation><con:request name="Request 1" id="83804664-0f99-4418-aa59-5df2c88c5734" mediaType="application/json"><con:settings/><con:endpoint>https://2epm7cn73b.execute-api.us-west-2.amazonaws.com</con:endpoint><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:parameters/><con:parameterOrder><con:entry>X-Amz-Date</con:entry><con:entry>Authorization</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:resource></con:resource></con:resource></con:interface><con:interface xsi:type="con:RestService" id="4686b1c6-c1f1-4a01-b67b-0de0fb980c1d" wadlVersion="http://wadl.dev.java.net/2009/02" name="REST Service 11" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints/><con:resource name="/" path="/dev/egressregistration/{NAMESPACE}/{DATASET}" id="c59fe065-6ba2-4a0d-9fa9-fdb1836e341f"><con:settings/><con:parameters><con:parameter><con:name>NAMESPACE</con:name><con:value/><con:style>TEMPLATE</con:style><con:default/><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>DATASET</con:name><con:value/><con:style>TEMPLATE</con:style><con:default/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:method name="GET" id="449849b1-4498-49c6-b245-3c505aa9e96e" method="GET"><con:settings/><con:parameters><con:parameter><con:name>X-Amz-Date</con:name><con:value>${AMZ-Date}</con:value><con:style>HEADER</con:style><con:default>${AMZ-Date}</con:default><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>Authorization</con:name><con:value>${authorization}</con:value><con:style>HEADER</con:style><con:default>${authorization}</con:default><con:description xsi:nil="true"/></con:parameter><con:parameter><con:name>Content-Type</con:name><con:value>application/json</con:value><con:style>HEADER</con:style><con:default>application/json</con:default><con:description xsi:nil="true"/></con:parameter></con:parameters><con:representation type="FAULT"><con:mediaType>application/json</con:mediaType><con:status>403</con:status><con:params/><con:element xmlns:acde="https://2epm7cn73b.execute-api.us-west-2.amazonaws.com/dev/egressregistration/acde/">acde:Fault</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:request name="GET Request" id="d0dc7675-eb00-4d26-b738-613a3a48371a" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://2epm7cn73b.execute-api.us-west-2.amazonaws.com</con:endpoint><con:request/><con:originalUri>https://2epm7cn73b.execute-api.us-west-2.amazonaws.com/dev/egressregistration/acde/agentstate</con:originalUri><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/><con:parameterOrder><con:entry>NAMESPACE</con:entry><con:entry>DATASET</con:entry><con:entry>X-Amz-Date</con:entry><con:entry>Authorization</con:entry><con:entry>Content-Type</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:testSuite id="7fae18c3-d91c-41e4-823a-1f21fc67602f" name="Request_Suite"><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:runType>SEQUENTIAL</con:runType><con:testCase id="4848647b-3f4e-479a-8483-aecb174b4db0" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="RequestTestStep" searchProperties="true" timeout="0"><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="restrequest" name="REST_GET_Request" id="1ec7381c-cb61-4530-bf03-77d3f16b7afc"><con:settings/><con:config service="REST Service 3" resourcePath="/${resource}" methodName="GET" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST_GET_Request" id="383178fd-827b-4f2d-99f0-0b330c9a74d2" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding xsi:nil="true"/><con:endpoint>${host}</con:endpoint><con:request>${request}</con:request><con:originalUri>https://jsonplaceholder.typicode.com/posts/</con:originalUri><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/><con:parameterOrder/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="REST_POST_Request" id="aef076de-2531-4564-924b-7323d1f05c88"><con:settings/><con:config service="REST Service 4" resourcePath="/${resource}" methodName="POST" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST_POST_Request" id="9f96247a-e7c6-4d50-a862-3ac534c750f6" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting><con:setting id="RecordRequestRepresentations">true</con:setting></con:settings><con:encoding xsi:nil="true"/><con:endpoint>${host}</con:endpoint><con:request>${requestBody}</con:request><con:originalUri>https://reqres.in/api/users</con:originalUri><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>NTLM</con:addedBasicAuthenticationTypes><con:addedBasicAuthenticationTypes>SPNEGO/Kerberos</con:addedBasicAuthenticationTypes><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/><con:parameterOrder/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="REST_PUT_Request" id="91eb7854-2bfe-46a7-aad9-dc3e28bb7c0d"><con:settings/><con:config service="REST Service 5" resourcePath="/${resource}" methodName="PUT" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST_PUT_Request" id="7fe42b17-f37b-4a5c-8d71-8f06865d0f4b" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>${host}</con:endpoint><con:request>${requestBody}</con:request><con:originalUri>https://2epm7cn73b.execute-api.us-west-2.amazonaws.com/dev/egressregistration/Aircel007/Billing</con:originalUri><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="REST_DELETE_Request" id="5fc59b81-a274-410c-b45a-e23fdb91053d"><con:settings/><con:config service="REST Service 7" resourcePath="/${resource}" methodName="DELETE" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST_DELETE_Request" id="87ec10dd-2886-42c8-ac53-9d6e19a83f09" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>${host}</con:endpoint><con:request>${requestBody}</con:request><con:originalUri>https://2epm7cn73b.execute-api.us-west-2.amazonaws.com/dev/egressregistration/Aircel007/Billing</con:originalUri><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase><con:properties/><con:reportParameters/></con:testSuite><con:testSuite id="ed591a72-7af9-49f5-a6a2-9992b392cbba" name="DriverSuite"><con:settings/><con:savedRecentRuns>1</con:savedRecentRuns><con:runType>SEQUENTIAL</con:runType><con:testCase id="dd929e6a-752d-4efc-9627-2e67e638a0e6" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="DriverTestStep" searchProperties="true" timeout="0"><con:settings><con:setting id="IncludeOverview">true</con:setting><con:setting id="IncludeResults">true</con:setting><con:setting id="FlowLayout">false</con:setting><con:setting id="ErrorDetails">true</con:setting><con:setting id="IncludeCoverage">true</con:setting></con:settings><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="groovy" name="Driver_Script" id="3a9e1b41-8593-4d69-98f5-b2e6ca9c0307"><con:settings/><con:config><script>import utils.*;
+import java.util.*;
+import groovy.json.JsonSlurper;
+import java.io.*;
+import groovy.json.JsonOutput
+import groovy.io.FileType
+
+// Globals 
+configSheet ='Config'
+driverSheet ='Driver'
+apiDetailsSheet ='APIDToCallDetails'
+assertionSheet ='Assertion'
+emailConfig= 'EmailConfig'
+projDir = context.expand('${projectDir}');
+excelPath = projDir+'\\TestDriverExcel\\TestDriverExcel.xlsx';
+
+
+
+util = new excelUtils(excelPath); // instance of the excelUtil class
+asrtObj = new AssertionsUtil(projDir);// instance of the assertion class
+emailReport =new EmailReport(); // instance of the emailreport class
+
+// @ testCasesDetails: Map&lt;String,Map&lt;String,String>> contains all the information related the active testcases from the TestDriverExcel.xlsx 
+
+testCasesDetails= util.getTestCasesDetails(util.getActiveTestCases(driverSheet), util.getHeaders(apiDetailsSheet), apiDetailsSheet)
+
+
+
+//********************************************************************************************************************************************** 
+def itr = testCasesDetails.keySet().iterator();
+
+//Loop that will iterate for all the active testcases.
+while(itr.hasNext())
+ {
+	def testCaseID = itr.next();
+	def testCaseDetails =testCasesDetails.get(testCaseID);
+	def requestType = testCaseDetails.get('TypeOfRequest');	
+	log.info "Making " +requestType +" Request"			 
+	switch (requestType.toUpperCase()) {
+		case 'GET':
+		     runRequest(testCaseDetails,'REST_GET_Request'); // request for GET
+			break;
+	     case 'POST':
+               runRequest(testCaseDetails,'REST_POST_Request'); // request for POST
+               break; 
+	     case 'DELETE':
+               runRequest(testCaseDetails,'REST_DELETE_Request'); // request for DELETE
+               break;
+	     case 'PUT' :
+               runRequest(testCaseDetails,'REST_PUT_Request'); // request for PUT
+	          break;
+		}			
+ }
+emailReport.sendReport(util.getSheetDetails(util.getHeaders(emailConfig), emailConfig),ExtentReportsDemo.reportLocation);
+
+//**********************************************************************************************************************************************
+/**
+     * Makes an API request based on the data provided on the TestDriverExcel.xlsx , 
+     * validates the response and sends email to the concerend stakeholders.
+     * 
+     * @param testCaseDetails
+     *            HashMap containing all the information for the active testcases
+     * @param requestType
+     *            Type of Request
+ */
+ 
+public void runRequest(def testCaseDetails, def requestType)
+{
+	setHost(testCaseDetails);
+	setRequestBody(testCaseDetails);
+	def prj = testRunner.testCase.testSuite.project.workspace.getProjectByName("InContact_API_Test")
+	def tCase = prj.testSuites['Request_Suite'].testCases['RequestTestStep']
+	def tStep = tCase.getTestStepByName(requestType)
+     tStep.run(testRunner, context)
+	//def response = context.expand( '${#[Request_Suite#RequestTestStep#'+requestType+']#Response}' )
+     def harResponse = context.expand( '${#[Request_Suite#RequestTestStep#'+requestType+']#HarResponse}' )	
+	saveResponse(harResponse,testCaseDetails);
+	asrtObj.validateTest(testCaseDetails.get('TestCaseID'),projDir)	
+}
+
+//**********************************************************************************************************************************************
+
+/**
+     * Set the host URL for the API request to be made.
+     * 
+     * @param testCaseDetails
+     *            HashMap containing all the information for the active testcases
+*/
+public void setHost(def testCaseDetails)
+{
+	def host=testCaseDetails.get('BaseUrl');
+	def resource =testCaseDetails.get('URIToAppend');
+	context['host']=host;
+	context['resource']=resource;
+}
+//**********************************************************************************************************************************************
+
+/**
+     * Attaches the request file to the body of the request. Currently it attaches the whole JSON file or XML file based 
+     * on the configuration in the TestDriverExcel.xlsx
+     * 
+     * @param testCaseDetails
+     *            HashMap containing all the information for the active testcases
+*/
+public void setRequestBody(def testCaseDetails)
+{
+	def filePath;
+	if(verifyChainedRequest(testCaseDetails))
+	{
+		def testCaseID=testCaseDetails.get('ChainResponseTestCaseID');
+		def fileExt=util.getCellValue(util.getCloumnNumber('ResponseType', apiDetailsSheet),util.getRowNumber(testCaseID, apiDetailsSheet), apiDetailsSheet);
+		filePath = projDir+'\\ResponseFiles\\'+testCaseDetails.get('ChainResponseTestCaseID')+'_Response.'+fileExt;
+	}
+	else
+	{
+	  filePath =	projDir +'\\RequestFiles\\'+testCaseDetails.get('TestCaseID')+'_RequestBody.'+testCaseDetails.get('XML/JSONBodyToAttach')
+	}
+	attachRequest(filePath)
+}
+
+//**********************************************************************************************************************************************
+
+/**
+     * Verifies whether the TestCase has any dependency on the other testCases.
+     * 
+     * @param testCaseDetails
+     *            HashMap containing all the information for the active testcases
+     * @return {boolean}        
+*/
+public boolean verifyChainedRequest(def testCaseDetails)
+{
+	if(testCaseDetails.get('ChainResponseTestCaseID')!='') return true;
+	else return false;
+
+}
+
+//**********************************************************************************************************************************************
+/**
+     * Attaches the request file to the body of the request. Currently it attaches the whole JSON file or XML file based 
+     * on the configuration in the TestDriverExcel.xlsx
+     * 
+     * @param filePath
+     *            Path of the file from where the request needs to be fetched
+     * @param requestType
+     *            Type of Request
+     * @throws IOException
+*/
+
+public void attachRequest(def filePath) throws IOException
+{
+	def file = new File(filePath);
+	def requestBody;
+	if(filePath==null)
+	{
+		log.info "Invalid FilePath";
+	}
+	else if(filePath.toLowerCase().contains('json'))
+	{
+         	requestBody = new JsonSlurper().parse(file);
+		requestBody=JsonOutput.toJson(requestBody)
+//		log.info requestBody
+	}
+	else if(filePath.toLowerCase().contains('xml'))
+	{
+		requestBody = new XmlSlurper().parse(file)
+//		log.info requestBody
+	}
+	context['requestBody']=requestBody;
+}
+
+//**********************************************************************************************************************************************
+/**
+     * Saves the response of the request.
+     * 
+     * @param response
+     *            The response from the request
+     * @param testCaseDetails
+     *            HashMap containing the details related to testCase.
+ */
+
+public void saveResponse(def response,def testCaseDetails)
+{
+	def filePath = projDir+'\\ResponseFiles\\'+testCaseDetails.get('TestCaseID')+'_Response.'+testCaseDetails.get('ResponseType');	
+	def File = new PrintWriter (filePath)
+	File.println(response)
+	File.flush()
+	File.close()
+	log.info "Response Saved at "+filePath
+}
+//**********************************************************************************************************************************************
+
+
+
+</script></con:config></con:testStep><con:properties><con:property><con:name>requestBody</con:name><con:value/></con:property><con:property><con:name>eHello</con:name><con:value/></con:property></con:properties><con:reportScript>params.ReportTitle = params.ReportTitle + " - "+ new Date().format('MM/dd/YY')</con:reportScript><con:reportParameters/><con:breakPoints><con:testStepId>3a9e1b41-8593-4d69-98f5-b2e6ca9c0307</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints></con:testCase><con:properties/><con:reportParameters/></con:testSuite><con:savedRecentRuns>1</con:savedRecentRuns><con:requirements/><con:properties><con:property><con:name>My Property</con:name><con:value>Property Value</con:value></con:property><con:property><con:name>aws-credential-dlegress</con:name><con:value>AKIAJMQ6HIURDY7S5CMA###S/g0Wamb6+ISslvuN71TNwZyd9giaHk3pyhS3R4P###us-west-2</con:value></con:property></con:properties><con:wssContainer/><con:databaseConnectionContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:reporting><con:reportTemplates/><con:reportTemplates><con:name>Test</con:name><con:reportType>COMMON</con:reportType><con:reportLevel>MAINREPORT</con:reportLevel><con:data><![CDATA[<jasperReport xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ReportTemplate" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="30" bottomMargin="30" xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <property name="ireport.encoding" value="UTF-8"/>
+   <template>"../../styles.jrtx"</template>
+   <!--FIELDS & PARAMS-->
+   <title>
+      <band height="70">
+         <textField>
+            <reportElement x="159" y="13" width="229" height="42"/>
+            <textElement>
+               <font size="26"/>
+            </textElement>
+            <textFieldExpression class="java.lang.String">$F{name} + " Report"</textFieldExpression>
+         </textField>
+      </band>
+   </title>
+   <pageHeader>
+      <band/>
+   </pageHeader>
+   <detail>
+      <band height="122">
+         <!--SUBREPORTS UNDER HERE-->
+         <subreport isUsingCache="true">
+            <reportElement positionType="Float" isPrintRepeatedValues="false" x="0" y="0" width="500" height="30"/>
+            <dataSourceExpression>$P{TestProperties}</dataSourceExpression>
+            <subreportExpression>"subreport:PropertiesReport"</subreportExpression>
+         </subreport>
+      </band>
+   </detail>
+</jasperReport>]]></con:data><con:subreports>PropertiesReport</con:subreports><con:scope>PROJECT</con:scope></con:reportTemplates><con:reportTemplates><con:name>Test123</con:name><con:reportType>COMMON</con:reportType><con:reportLevel>MAINREPORT</con:reportLevel><con:data><![CDATA[<jasperReport xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ReportTemplate" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="30" bottomMargin="30" xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <property name="ireport.encoding" value="UTF-8"/>
+   <template>"../../styles.jrtx"</template>
+   <!--FIELDS & PARAMS-->
+   <title>
+      <band height="70">
+         <textField>
+            <reportElement x="159" y="13" width="229" height="42"/>
+            <textElement>
+               <font size="26"/>
+            </textElement>
+            <textFieldExpression class="java.lang.String">$F{name} + " Report"</textFieldExpression>
+         </textField>
+      </band>
+   </title>
+   <pageHeader>
+      <band/>
+   </pageHeader>
+   <detail>
+      <band height="122">
+         <!--SUBREPORTS UNDER HERE-->
+         <subreport isUsingCache="true">
+            <reportElement positionType="Float" isPrintRepeatedValues="false" x="0" y="0" width="500" height="30"/>
+            <dataSourceExpression>$P{TestProperties}</dataSourceExpression>
+            <subreportExpression>"subreport:PropertiesReport"</subreportExpression>
+         </subreport>
+      </band>
+   </detail>
+</jasperReport>]]></con:data><con:subreports>PropertiesReport</con:subreports><con:scope>PROJECT</con:scope></con:reportTemplates><con:xmlTemplates/><con:xmlTemplates/><con:parameters/><con:parameters/></con:reporting><con:reporting/><con:authRepository><con:basicAuthEntry><con:name>Temp</con:name><con:type>Basic</con:type><con:preemptive>false</con:preemptive></con:basicAuthEntry></con:authRepository><con:tags/></con:soapui-project>
