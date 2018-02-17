@@ -37,7 +37,7 @@ public class CommonFunctions extends WebElements {
 		 final int LOGIN_TIMEOUT = 18000; 
 		/* System.setProperty("webdriver.chrome.driver", "lib\\drivers\\chromedriver.exe");
 		 WebDriver driver = new ChromeDriver();*/
-		 System.setProperty("phantomjs.binary.path", "lib\\drivers\\phantomjs.exe");
+		 System.setProperty("phantomjs.binary.path", "lib/drivers/phantomjs.exe");
 		 WebDriver driver = new PhantomJSDriver(DesiredCapabilities.phantomjs());
 		 Driver.setWebDriver(driver);
 	        log.debug("login", "Opening Central");
