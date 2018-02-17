@@ -39,7 +39,7 @@ public class CustomDataLoader {
     public static void init() {
         log.info("init", "Initializing CustomDataLoader...");
         config = new ConfigLoader();
-        customDataFileName = System.getProperty("user.dir") + "\\src\\main\\resources\\" + config.locale + "\\" + config.testdatafile;
+        customDataFileName = System.getProperty("user.dir") + "/src/main/resources/" + config.locale + "/" + config.testdatafile;
         xmlparser = new XmlParser(config.cluster);
     }
 
@@ -69,7 +69,7 @@ public class CustomDataLoader {
             }
 
             if (customDataFileName == null) {
-                customDataFileName = System.getProperty("user.dir") + "\\src\\main\\resources\\" + config.locale + "\\"
+                customDataFileName = System.getProperty("user.dir") + "/src/main/resources/" + config.locale + "/"
                         + config.testdatafile;
             }
 
@@ -121,7 +121,7 @@ public class CustomDataLoader {
             }
 
             if (customDataFileName == null) {
-                customDataFileName = System.getProperty("user.dir") + "\\src\\main\\resources\\" + config.locale + "\\"
+                customDataFileName = System.getProperty("user.dir") + "/src/main/resources/" + config.locale + "/"
                         + config.testdatafile;
             }
 
