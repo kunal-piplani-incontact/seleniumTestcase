@@ -184,7 +184,7 @@ public class WebElements extends Driver{
 	/**
 	 * Get the attribute of the webelements.
 	 * 
-	 * @param String
+	 * 
 	 *            The name of the attribute.
 	 * @return String The value of the attribute.
 	 * 
@@ -233,20 +233,20 @@ public class WebElements extends Driver{
 		int hight = getElementByXpath(getXPathLocator()).getSize().getHeight() / 2;
 
 		Robot robot;
-// 		try {
-// 			robot = new Robot();
-// 			Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
-// 			org.openqa.selenium.Dimension browserSize = getRemoteWebDriverInstance().manage().window().getSize();
-// 			int elementOffset = (screenSize.height - browserSize.height) * 2 + offset;
-// 			robot.mouseMove(coordinates.getCoordinates().onPage().x + width, coordinates.getCoordinates().onPage().y + elementOffset
-// 					+ hight);
-// 			WaitTool.sleep(1);
-// 		} catch (AWTException e) {
-
-// 			log.error("mouseHover", "fail to perform mouseHover operation on element");
-// 			// e.printStackTrace();
-// 		}
-	//}
+//		try {
+//			robot = new Robot();
+//			Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+//			org.openqa.selenium.Dimension browserSize = getRemoteWebDriverInstance().manage().window().getSize();
+//			int elementOffset = (screenSize.height - browserSize.height) * 2 + offset;
+//			robot.mouseMove(coordinates.getCoordinates().onPage().x + width, coordinates.getCoordinates().onPage().y + elementOffset
+//					+ hight);
+//			WaitTool.sleep(1);
+//		} catch (AWTException e) {
+//
+//			log.error("mouseHover", "fail to perform mouseHover operation on element");
+//			// e.printStackTrace();
+//		}
+	}
 
 	/**
 	 * Used to hover on an element of the page
@@ -276,7 +276,7 @@ public class WebElements extends Driver{
 	/**
 	 * Execute Java Script.
 	 * 
-	 * @param String
+	 * 
 	 *            Java Script that we want to execute on webElement.
 	 * @return Object
 	 */
@@ -290,9 +290,9 @@ public class WebElements extends Driver{
 	/**
 	 * Execute Java Script.
 	 * 
-	 * @param String
+	 * 
 	 *            Java Script that we want to execute on webElement.
-	 * @param Object
+	 * @paramObject
 	 *            List of Object
 	 * @return Object
 	 */
