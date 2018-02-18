@@ -233,20 +233,20 @@ public class WebElements extends Driver{
 		int hight = getElementByXpath(getXPathLocator()).getSize().getHeight() / 2;
 
 		Robot robot;
-		try {
-			robot = new Robot();
-			Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
-			org.openqa.selenium.Dimension browserSize = getRemoteWebDriverInstance().manage().window().getSize();
-			int elementOffset = (screenSize.height - browserSize.height) * 2 + offset;
-			robot.mouseMove(coordinates.getCoordinates().onPage().x + width, coordinates.getCoordinates().onPage().y + elementOffset
-					+ hight);
-			WaitTool.sleep(1);
-		} catch (AWTException e) {
+// 		try {
+// 			robot = new Robot();
+// 			Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+// 			org.openqa.selenium.Dimension browserSize = getRemoteWebDriverInstance().manage().window().getSize();
+// 			int elementOffset = (screenSize.height - browserSize.height) * 2 + offset;
+// 			robot.mouseMove(coordinates.getCoordinates().onPage().x + width, coordinates.getCoordinates().onPage().y + elementOffset
+// 					+ hight);
+// 			WaitTool.sleep(1);
+// 		} catch (AWTException e) {
 
-			log.error("mouseHover", "fail to perform mouseHover operation on element");
-			// e.printStackTrace();
-		}
-	}
+// 			log.error("mouseHover", "fail to perform mouseHover operation on element");
+// 			// e.printStackTrace();
+// 		}
+	//}
 
 	/**
 	 * Used to hover on an element of the page
